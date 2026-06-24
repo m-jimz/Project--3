@@ -1,20 +1,20 @@
-# Web Development Project 3 - *Name of App Here*
+# Web Development Project 3 - *React Quiz*
 
-Submitted by: **Your Name Here**
+Submitted by: **Marco Jimenez**
 
 This web app: **insert description**
 
-Time spent: **X** hours spent in total
+Time spent: **21** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] **The user can enter their guess into an input box *before* seeing the flipside of the card**
+- [x] **The user can enter their guess into an input box *before* seeing the flipside of the card**
   - Application features a clearly labeled input box with a submit button where users can type in a guess
   - Clicking on the submit button with an **incorrect** answer shows visual feedback that it is wrong 
   -  Clicking on the submit button with a **correct** answer shows visual feedback that it is correct
-- [ ] **The user can navigate through an ordered list of cardss**
+- [x] **The user can navigate through an ordered list of cardss**
   - A forward/next button displayed on the card navigates to the next card in a set sequence when clicked
   - A previous/back button displayed on the card returns to the previous card in the set sequence when clicked
   - Both the next and back buttons should have some visual indication that the user is at the beginning or end of the list (for example, graying out and no longer being available to click), not allowing for wrap-around navigation
@@ -39,7 +39,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
+* [x] List anything else that you added to improve the site's functionality!
 
 ## Video Walkthrough
 
@@ -57,10 +57,11 @@ GIF created with ...
 ## Notes
 
 Describe any challenges encountered while building the app.
+Using css rules to affect the for the input button so change. that was difficult. 
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2026] [Marco Jimenez]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

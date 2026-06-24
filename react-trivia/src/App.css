@@ -182,3 +182,156 @@
     border-right-color: var(--border);
   }
 }
+
+/* Flashcards styles moved here from src/components/Flashcards.css */
+.flashcards {
+  max-width: 860px;
+  margin: 40px auto;
+  padding: 0 16px;
+  color: #000;
+}
+
+.flashcards h2 {
+  margin-bottom: 10px;
+}
+
+.flashcards-progress {
+  margin-bottom: 18px;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.flashcard-scene {
+  perspective: 1200px;
+  width: min(100%, 760px);
+  height: 280px;
+  margin: 0 auto;
+}
+
+.flashcard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.65s ease;
+  border-radius: 18px;
+}
+
+.flashcard.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.flashcard-face {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 14px;
+  padding: 26px;
+  text-align: center;
+  backface-visibility: hidden;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  color: #000;
+}
+
+.flashcard-front {
+  background: linear-gradient(140deg, #f7fafc, #ecf2ff);
+}
+
+.flashcard-back {
+  transform: rotateY(180deg);
+  background: linear-gradient(140deg, #fff8ed, #fff2f2);
+}
+
+.flashcard-face h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.flashcard-face p {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  max-width: 60ch;
+}
+
+.flashcards-controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.flashcards-controls button {
+  border: 1px solid var(--border);
+  background: #ffffff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  color: #000;
+}
+
+.flashcards-controls button:hover {
+  border-color: #94a3b8;
+}
+
+/* disabled nav buttons */
+.flashcards-controls button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+  filter: grayscale(20%);
+}
+
+@media (max-width: 768px) {
+  .flashcard-scene {
+    height: 240px;
+    width: min(100%, 96vw);
+  }
+
+  .flashcard-face {
+    padding: 20px;
+  }
+
+  .flashcard-face p {
+    font-size: 1rem;
+  }
+}
+
+/* Guess form positioning */
+.guess-form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+  transform: translateY(-12px); /* move up slightly */
+  align-items: center;
+}
+
+.guess-form input {
+  max-width: 260px;
+}
+
+/* Input border feedback for guesses */
+.guess-input {
+  border: 1px solid #cfcfcf;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+  padding: 10px 12px;
+  border-radius: 8px;
+  width: 260px;
+  box-sizing: border-box;
+}
+.guess-input.correct {
+  border-color: #16a34a; /* green */
+  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.08);
+}
+.guess-input.incorrect {
+  border-color: #dc2626; /* red */
+  box-shadow: 0 6px 18px rgba(220, 38, 38, 0.06);
+}
