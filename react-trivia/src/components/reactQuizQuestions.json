@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "question": "What hook is used to add state to a functional component?",
+    "answer": "useState"
+  },
+  {
+    "id": 2,
+    "question": "What hook is used for side effects like data fetching?",
+    "answer": "useEffect"
+  },
+  {
+    "id": 3,
+    "question": "What prop is required when rendering lists in React?",
+    "answer": "key"
+  },
+  {
+    "id": 4,
+    "question": "What is JSX?",
+    "answer": "JavaScript syntax extension"
+  },
+  {
+    "id": 5,
+    "question": "What method is used to render arrays of elements in JSX?",
+    "answer": "map"
+  },
+  {
+    "id": 6,
+    "question": "What is the default direction of data flow in React?",
+    "answer": "parent to child"
+  },
+  {
+    "id": 7,
+    "question": "What hook lets you keep a mutable value without re-rendering?",
+    "answer": "useRef"
+  },
+  {
+    "id": 8,
+    "question": "What hook is used to access context values?",
+    "answer": "useContext"
+  }
+]
