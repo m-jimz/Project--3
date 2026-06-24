@@ -2,7 +2,7 @@
 
 Submitted by: **Marco Jimenez**
 
-This web app: **insert description**
+This web app: **This app is a flashcard quiz that test your react trivia by using writing your answer.**
 
 Time spent: **21** hours spent in total
 
@@ -57,7 +57,6 @@ GIF created with ...
 ## Notes
 
 Describe any challenges encountered while building the app.
-Using css rules to affect the for the input button so change. that was difficult. 
 
 ## License
 
